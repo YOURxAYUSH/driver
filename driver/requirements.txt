@@ -1,0 +1,7 @@
+flask
+opencv-python
+imutils
+dlib
+scipy
+pygame
+face-recognition

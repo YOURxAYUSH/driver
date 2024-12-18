@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Drowsiness Detection System</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Car Monitoring System</h1>
+    </header>
+
+    <main>
+        <section id="car-info">
+            <h2>Car Information</h2>
+            <img src="/static/assets/car.png" alt="Car Image">
+            <p>Car Model: Tesla Model S</p>
+            <p>Speed: <span id="car-speed">Fetching...</span></p>
+        </section>
+        <section id="user-info">
+            <h2>User Information</h2>
+            <p>Status: <span id="user-status">No Face Detected</span></p>
+            <p>Name: <span id="user-name">N/A</span></p>
+            <p>License: <span id="user-license">N/A</span></p>
+            <p>Vehicle: <span id="user-vehicle">N/A</span></p>
+            <div id="user-face">
+                <h3>Recognized Face:</h3>
+                <img id="user-image" src="/static/default_face.jpg" alt="Face Image" style="width:150px; height:150px; border-radius:10px;">
+            </div>
+        </section>
+        
+        
+        
+
+        <section id="live-feed">
+            <h2>Live Video Feed</h2>
+            <img src="{{ url_for('video_feed') }}" alt="Video Stream">
+        </section>
+
+        <section id="gps-info">
+            <h2>GPS Location</h2>
+            <img src="/static/assets/map.png" alt="Map">
+            <p>Latitude: <span id="gps-latitude">Fetching...</span></p>
+            <p>Longitude: <span id="gps-longitude">Fetching...</span></p>
+        </section>
+    </main>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+</html>
