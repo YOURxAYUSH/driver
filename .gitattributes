@@ -1,2 +1,12 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Exclude Python cache files
+__pycache__/* linguist-vendored
+
+# Exclude Python virtual environment
+.venv/* linguist-vendored
+
+# Exclude compiled Python files
+*.pyc linguist-vendored
+
+# Optional: Exclude large files like logs or other data
+*.log linguist-vendored
+data/* linguist-vendored
